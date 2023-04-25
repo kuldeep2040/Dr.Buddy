@@ -9,8 +9,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="navigtion.css">
     <style>
-        
-
         .whole {
             padding: 30px;
             background-color: rgb(237, 239, 239);
@@ -70,7 +68,7 @@
             flex: 9px;
         }
 
-        .whol{
+        .whol {
             margin-top: -530px;
             margin-left: 950px;
             padding: 39px;
@@ -78,18 +76,18 @@
             border: 2px solid rgb(194, 192, 192);
         }
 
-        .username{
+        .username {
             margin-top: 20px;
             font-size: x-large;
         }
 
         #nor {
-            margin-top:30px;
+            margin-top: 30px;
             font-size: x-large;
         }
 
-        .boxes{
-            margin-top: 10px; 
+        .boxes {
+            margin-top: 10px;
             height: 40px;
             width: 450px;
             font-size: large;
@@ -110,20 +108,24 @@
             width: 450px;
             height: 45px;
         }
+
         #box {
             margin-top: 40px;
             font-size: xx-large;
         }
-        .write{
-            font-size:larger;
+
+        .write {
+            font-size: larger;
         }
-        .heading{
+
+        .heading {
             font-size: xx-large;
             color: green;
             /* font-style: italic; */
             font-weight: bolder;
         }
-        .doctor{
+
+        .doctor {
             float: right;
             font-size: large;
         }
@@ -144,12 +146,13 @@
             font-size: x-large;
         }
 
-        #show-password:focus + .hidden-password {
+        #show-password:focus+.hidden-password {
             font-size: 16px;
             padding: 5px;
             border: 1px solid #ccc;
         }
-        #pass{
+
+        #pass {
             margin-top: 20px;
             font-size: x-large;
             margin-bottom: 10px;
@@ -160,11 +163,11 @@
 <body>
     <nav class="whole">
         <nav class="logo">
-            <li><a href="./my.html" class="logo" target="_blank"><img src="kuldeep.png" alt="" height="130px"></a></li>
+            <li><a href="./index.html" class="logo" target="_blank"><img src="kuldeep.png" alt="" height="130px"></a></li>
         </nav>
         <nav class="navbar">
             <ul>
-                <li><a href="./my.html" >Home</a></li>
+                <li><a href="./index.html">Home</a></li>
                 <li><a href="./doctor.html">Doctor</a></li>
                 <li><a href="./medicine.html">Medicines</a></li>
                 <li><a href="./volunteers.html">Volunteers</a></li>
@@ -194,26 +197,30 @@
                 <a href="./signUp.html" style="color: rgb(255, 98, 0);">Register Here</a>
             </div>
 
-            <div class="heading">Join Dr. Buddy <hr> </div>
+            <div class="heading">Join Dr. Buddy
+                <hr>
+            </div>
 
             <div class="username" id="nor">&bull; Full Name</div>
 
             <input type="text" class="username boxes" placeholder=" Enter Your Name">
 
-            <div class="username" >&bull; Mobile Number</div>
+            <div class="username">&bull; Mobile Number</div>
 
             <input type="number" id="nm" class="username boxes" placeholder="   Enter Mobile Number">
 
             <div style="margin-bottom: 20px;">
                 <label for="password" id="pass">&bull; Password: <br></label>
-                <input type="password" id="password" name="password" class="hidden-password" placeholder="Enter Password">
+                <input type="password" id="password" name="password" class="hidden-password"
+                    placeholder="Enter Password">
                 <button id="show-password">&#128065;</button>
 
             </div>
-            
+
             <div>
                 <label for="password" id="pass">&bull; Confirm Password: <br></label>
-                <input type="password" id="password" name="password" class="hidden-password" placeholder="Enter Confirm Password">
+                <input type="password" id="password" name="password" class="hidden-password"
+                    placeholder="Enter Confirm Password">
                 <button id="show-password">&#128065;</button>
 
             </div>
