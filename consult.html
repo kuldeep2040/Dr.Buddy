@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consult With Doctor</title>
+    <link rel="stylesheet" href="navigtion.css">
+    <style>
+        body {
+            background-color: rgb(229, 226, 226);
+        }
+
+        .box {
+            border: 2px solid rgb(189, 192, 196);
+            background-color: aliceblue;
+            display: table;
+            padding: 40px;
+            font-size: x-large;
+            margin-top: 90px;
+            margin-left: 380px;
+            padding-left: 90px;
+        }
+        .username{
+            margin-top: 30px; 
+            margin-right: 40px;
+            
+            
+        }
+        .boxes{
+            margin-top: 9px;
+            width: 350px;
+            height: 40px;
+            font-size: large;
+        }
+        .write{
+            margin-top: 10px; ;
+            height: 40px;
+            width: 365px;
+            background-color: #82e982;
+            font-size: large;
+        }
+        #course{
+            font-size: large;
+        }
+        .submit{
+            text-align: center;
+        }
+        #photo{
+            margin-left: 470px;
+            margin-top: -485px;
+            height: 500px;
+            border-left: 1px solid rgb(122, 122, 122);
+            padding-left:40px;
+        }
+        .care{
+            background-color: #82e982;
+            border: 2px solid black ;
+            padding: 10px;
+            text-decoration: none;
+        }
+        #continue{
+            margin-left: 128px;
+            margin-right: 128px;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <nav class="whole">
+            <nav class="logo">
+                <li><a href="#" class="logo"><img src="kuldeep.png" alt="" height="130px"></a></li>
+            </nav>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="./my.html" target="_blank">Home</a></li>
+                    <li><a href="./doctor.html">Doctor</a></li>
+                    <li><a href="./medicine.html">Medicines</a></li>
+                    <li><a href="./volunteers.html">Volunteers</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </nav>
+        </nav>
+        <br>
+        <nav class="right">
+            <ul>
+                <li><a href="#">About us</a> </li>
+            </ul>
+        </nav>
+    </div>
+    <form action="data3.txt">
+        <div class="box">
+            <h2 id="box-heading" style="color: #127112; text-decoration: underline;">Consult with Doctor</h2>
+
+            <div class="username level" id="nor">Name</div>
+            <input type="text" class="username boxes level" placeholder=" &nbsp; Enter Patient Name ">
+
+            <div class="username level" id="nor">Mobile Number</div>
+            <input type="text" class="username boxes level" placeholder=" &nbsp;Enter Mobile Number">
+
+            <div class="username level"> <!--For creating the options between many -->
+                Gender :   <label for="male">Male</label><input type="radio" name="myGender" id="male">
+                <label for="female"> Female</label><input type="radio" name="myGender" id="female ">
+                <label for="other"> Other</label><input type="radio" name="myGender" id="female ">
+            </div>
+
+            <div class="username level">
+                <label for="course">Appointment For - </label>
+                <select name="myCourse" id="course">
+                    <option value="self">Self</option>
+                    <option value="Mother">Mother</option>
+                    <option value="Father">Father</option>
+                    <option value="Friend">Friend</option>
+                    <option value="Other">Other</option>
+                </select>
+            </div>
+            <!-- <div class="username level">
+                <input type="submit" value="Continue "class="username write submit" id="btn">
+            </div> -->
+            <!-- <a href="./login.html" class="usernam"></a> -->
+            <br>
+            <br>
+            <div>
+                <a href="./login.html" class="care"><span id="continue">Continue</span></a>
+            </div>
+            <hr style="float: right;">
+            <img src="caree.png" alt="Doctorimg" id="photo" >
+        </div>
+    </form>
+    
+</body>
+
+</html>

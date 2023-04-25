@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr.Buddy</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="navigtion.css">
+    <style>
+        #nor {
+            margin-top: -450px;
+            font-size: x-large;
+        }
+
+
+        a:hover {
+            background-color: rgb(146, 215, 255);
+            text-decoration: underline;
+        }
+
+        a:visited {
+            text-decoration: dashed;
+        }
+
+        .hidden-password {
+            margin-top: 10px;
+            font-size: 18px;
+            padding: 10px;
+            width: 399px;
+        }
+
+        .hidden-password:focus {
+            outline: none;
+        }
+
+        #show-password {
+            margin-top: 10px;
+            font-size: x-large;
+        }
+
+        #show-password:focus+.hidden-password {
+            font-size: 16px;
+            padding: 5px;
+            border: 1px solid #ccc;
+        }
+        #pass{
+            margin-top: 20px;
+            font-size: x-large;
+            margin-bottom: 10px;
+        }
+        .care {
+            background-color: rgb(47, 178, 47);
+            margin-top: 40px;
+            border: 2px solid black;
+            padding: 10px;
+            text-align: center;
+            font-size: x-large;
+            text-decoration: none;
+        }
+
+        #continue {
+            text-decoration: none;
+        }
+        a {
+            color: rgb(0, 0, 0);
+            
+            text-decoration: none;
+        }
+    </style>
+    <link rel="stylesheet" href="login.css">
+</head>
+
+<body>
+    <nav class="whole">
+        <nav class="logo">
+            <li><a href="./my.html" class="logo" target="_blank"><img src="kuldeep.png" alt="" height="130px"></a></li>
+        </nav>
+        <nav class="navbar">
+            <ul>
+                <li><a href="./my.html" target="_blank">Home</a></li>
+                <li><a href="./doctor.html">Doctor</a></li>
+                <li><a href="./medicine.html">Medicines</a></li>
+                <li><a href="./volunteers.html">Volunteers</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </nav>
+    </nav>
+    <br>
+    <nav class="right">
+        <ul>
+            <li><a href="#">About us</a> </li>
+        </ul>
+    </nav>
+    <nav class="second">
+        <ul>
+            <li><a href="./login.html">Login</a></li>
+            <li><a href="./signUp.html">Sign Up</a></li>
+            <br>
+            <br>
+            <hr>
+        </ul>
+    </nav>
+
+    <div><img src="physician-icon-png-10.png" alt="login image" id="limg"></div>
+    <form action="data2.txt">
+        <nav class="whol">
+            <div class="heading">Log in
+                <hr>
+            </div>
+            <div class="username" id="nor">Mobile Number / Email - ID</div>
+
+            <input type="text" class="username boxes" placeholder="Enter Mobile Number / Email - ID" style="margin-bottom: 20px;">
+
+            <div>
+                <label for="password" id="pass">Password: <br></label>
+                <input type="password" id="password" name="password" class="hidden-password" placeholder="Enter Password">
+                <button id="show-password">&#128065;</button>
+
+            </div>
+
+            <div>
+                <label for="box" class="username write">Are You Patient ?</label>
+                <input type="checkbox" id="box">
+            </div>
+
+            <!-- <div>
+                <input type="submit" value=" Login " class="username write" id="btn">
+            </div> -->
+            <div class="care">
+                <a href="./pass.html"><span id="continue">Continue</span></a>
+            </div>
+        </nav>
+    </form>
+</body>
+
+</html>

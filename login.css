@@ -1,0 +1,51 @@
+.whol{
+    margin-top: -470px;
+    margin-left: 950px;
+    padding: 40px;
+    display: table;
+    border: 2px solid rgb(194, 192, 192);
+}
+.username{
+    margin-top: 40px;
+    font-size: x-large;
+}
+
+#nor {
+    margin-top: 30px;
+    font-size: x-large;
+}
+.boxes{
+    margin-top: 10px; 
+    height: 40px;
+    width: 450px;
+    font-size: large;
+}
+
+a:hover {
+    background-color: rgb(230, 238, 243);
+    text-decoration: underline;
+}
+
+a:visited {
+    text-decoration: dashed;
+}
+
+#btn {
+    margin-top: 40px;
+    background-color: rgb(91, 170, 91);
+    width: 450px;
+    height: 45px;
+}
+#box {
+    margin-top: 40px;
+    font-size: xx-large;
+}
+.write{
+    font-size:larger;
+}
+.heading{
+    font-size: xx-large;
+    color: green;
+    font-style: italic;
+    font-weight: bolder;
+}

@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr.Buddy</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="navigtion.css">
+    <style>
+        
+
+        .whole {
+            padding: 30px;
+            background-color: rgb(237, 239, 239);
+            height: 50px;
+        }
+
+        .right {
+            position: absolute;
+            right: 40px;
+            top: 5px;
+        }
+
+        .right li {
+            list-style: none;
+            float: left;
+            padding: 23px;
+            margin: 4px;
+            font-size: larger;
+            font-weight: bolder;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+        }
+
+        .right li a {
+            text-decoration: none;
+            color: black;
+        }
+
+        .main {
+            font-size: 70px;
+
+            font-family: 'Tiro Devanagari Marathi', serif;
+            margin-top: 140px;
+            padding-left: 100px;
+        }
+
+        .second li {
+            float: left;
+            list-style: none;
+        }
+
+        .second li a {
+            text-decoration: none;
+            margin-left: 590px;
+            font-size: xx-large;
+        }
+
+        #limg {
+            margin-top: 70px;
+            margin-left: 295px;
+            display: flex;
+            height: 490px;
+
+        }
+
+        #limg div {
+            flex: 9px;
+        }
+
+        .whol{
+            margin-top: -530px;
+            margin-left: 950px;
+            padding: 39px;
+            display: table;
+            border: 2px solid rgb(194, 192, 192);
+        }
+
+        .username{
+            margin-top: 20px;
+            font-size: x-large;
+        }
+
+        #nor {
+            margin-top:30px;
+            font-size: x-large;
+        }
+
+        .boxes{
+            margin-top: 10px; 
+            height: 40px;
+            width: 450px;
+            font-size: large;
+        }
+
+        a:hover {
+            background-color: rgb(146, 215, 255);
+            text-decoration: underline;
+        }
+
+        a:visited {
+            text-decoration: dashed;
+        }
+
+        #btn {
+            margin-top: 40px;
+            background-color: rgb(146, 215, 255);
+            width: 450px;
+            height: 45px;
+        }
+        #box {
+            margin-top: 40px;
+            font-size: xx-large;
+        }
+        .write{
+            font-size:larger;
+        }
+        .heading{
+            font-size: xx-large;
+            color: green;
+            /* font-style: italic; */
+            font-weight: bolder;
+        }
+        .doctor{
+            float: right;
+            font-size: large;
+        }
+
+        .hidden-password {
+            margin-top: 10px;
+            font-size: 18px;
+            padding: 10px;
+            width: 399px;
+        }
+
+        .hidden-password:focus {
+            outline: none;
+        }
+
+        #show-password {
+            margin-top: 10px;
+            font-size: x-large;
+        }
+
+        #show-password:focus + .hidden-password {
+            font-size: 16px;
+            padding: 5px;
+            border: 1px solid #ccc;
+        }
+        #pass{
+            margin-top: 20px;
+            font-size: x-large;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="whole">
+        <nav class="logo">
+            <li><a href="./my.html" class="logo" target="_blank"><img src="kuldeep.png" alt="" height="130px"></a></li>
+        </nav>
+        <nav class="navbar">
+            <ul>
+                <li><a href="./my.html" >Home</a></li>
+                <li><a href="./doctor.html">Doctor</a></li>
+                <li><a href="./medicine.html">Medicines</a></li>
+                <li><a href="./volunteers.html">Volunteers</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </nav>
+    </nav>
+    <br>
+    <nav class="right">
+        <ul>
+            <li><a href="#">About us</a> </li>
+        </ul>
+    </nav>
+    <nav class="second">
+        <ul>
+            <li><a href="./login.html">Login</a></li>
+            <li><a href="./signUp.html">Sign Up</a></li>
+            <br>
+            <br>
+            <hr>
+        </ul>
+    </nav>
+    <div><img src="physician-icon-png-10.png" alt="login image" id="limg"></div>
+    <form action="drRegistar.txt">
+        <nav class="whol">
+            <div class="doctor">Not a Doctor ? <br>
+                <a href="./signUp.html" style="color: rgb(255, 98, 0);">Register Here</a>
+            </div>
+
+            <div class="heading">Join Dr. Buddy <hr> </div>
+
+            <div class="username" id="nor">&bull; Full Name</div>
+
+            <input type="text" class="username boxes" placeholder=" Enter Your Name">
+
+            <div class="username" >&bull; Mobile Number</div>
+
+            <input type="number" id="nm" class="username boxes" placeholder="   Enter Mobile Number">
+
+            <div style="margin-bottom: 20px;">
+                <label for="password" id="pass">&bull; Password: <br></label>
+                <input type="password" id="password" name="password" class="hidden-password" placeholder="Enter Password">
+                <button id="show-password">&#128065;</button>
+
+            </div>
+            
+            <div>
+                <label for="password" id="pass">&bull; Confirm Password: <br></label>
+                <input type="password" id="password" name="password" class="hidden-password" placeholder="Enter Confirm Password">
+                <button id="show-password">&#128065;</button>
+
+            </div>
+
+            <div>
+                <input type="submit" value="Sign Up" class="username write" id="btn">
+            </div>
+        </nav>
+    </form>
+</body>
+
+</html>
